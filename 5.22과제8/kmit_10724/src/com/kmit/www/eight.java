@@ -8,16 +8,21 @@ public class eight {
 
         System.out.print("입력:");
         int a= scanner.nextInt();
-        int d=0;
+        int i;
+        int j;
+        int k;
 
-        for (int b=0;b<a;b++) {
-            System.out.println("*");
+        for (i=0;i<a;i++) {
 
-
-            for (int c=a;c>b;c--) {
+            for (j=1;j<a-i;j++) {
                 System.out.print(" ");
 
             }
+            for(k=0;k<i*2+1;k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
+
     }
 }
